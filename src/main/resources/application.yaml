@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: "172.16.240.59"
+    listener:
+      simple:
+        concurrency: 1
+        max-concurrency: 1
+        prefetch: 1
+    password: 4ut0m4t3
+    port: 5672
+    requested-heartbeat: 30
+    username: automacao
+  rabbitmq-config:
+    queues:
+      queue-consumer-teste: teste-treinamento
+
+logging:
+  level:
+    org: ERROR
